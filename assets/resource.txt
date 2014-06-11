@@ -1,0 +1,7 @@
+*** Settings ***
+Library     Selenium2Library
+Library     String
+Resource    environment_test.txt
+
+*** Variables ***
+${BROWSER}      Firefox
