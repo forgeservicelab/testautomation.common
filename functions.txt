@@ -1,0 +1,7 @@
+*** Keywords ***
+
+Verify maxlength
+    [Arguments]    ${element_id}    ${maxlength}
+    ${ml}     Get Element Attribute    ${element_id}@maxlength
+    Should Be Equal    ${ml}    ${maxlength}
+
