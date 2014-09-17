@@ -1,8 +1,16 @@
 *** Settings ***
-Library     Selenium2Library
+Library     Selenium2Library    run_on_failure=Capture Page Screenshot With Unique Name
+#Library     Selenium2Library
 Library     String
+Library     uuid
 Resource    environment_${ENV}.txt
 
 *** Variables ***
 ${ENV}    test
 ${BROWSER}      Firefox
+
+*** Keywords ***
+Capture Page Screenshot With Unique Name
+    ${uuid} =  uuid4
+    Capture Page Screenshot  selenium-${uuid}.png
+
