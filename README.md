@@ -18,5 +18,14 @@ Variables
 
 + assets/secrets.txt Credentials used in testing
 + assets/resource.txt Browser to be used in testing etc...  
-+ assets/environment_<???>.txt URLs to tested services 
++ assets/environment_xxx.txt URLs to tested service
+
+
+To encrypt secrets file:
+    
+    openssl des3 -in secrets.txt -out secrets.txt.crypted 
+
+To decrypt secrets file:
+
+    openssl des3 -d < secrets.txt.crypted > secrets.txt -k <password>
 
