@@ -20,6 +20,9 @@ Variables
 + assets/resource.txt Browser to be used in testing etc...  
 + assets/environment_xxx.txt URLs to tested service
 
+After setting secrets in secrets.txt file, you might want to encrypt the file
+and store it to repo as encrypted. Then you can let Jenkins to decrypt it
+when it needs it.
 
 To encrypt secrets file:
     
