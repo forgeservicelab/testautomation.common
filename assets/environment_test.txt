@@ -1,0 +1,12 @@
+*** Variables ***
+${DRUPAL_URL}     https://testing.forgeservicelab.fi
+${AUTH_URL}    https://auth.forgeservicelab.fi
+${GIT_URL}    https://gitlab-test.forgeservicelab.fi
+${GIT_URL_NO_PROTOCOL}    gitlab-test.forgeservicelab.fi
+${REDMINE_URL}    https://support-test.forgeservicelab.fi
+${REDMINE_URL_LONG}    https://support-test.forgeservicelab.fi
+${OPENSTACK_URL}    https://cloud.forgeservicelab.fi
+${PASSWORD_URL}     https://testauth.forgeservicelab.fi/password
+${XMPP_URL}    xmpp-test.forgeservicelab.fi
+${IDP_URL}    https://testidp.forgeservicelab.fi
+${TO_XMPP}    <PUT YOUR XMPP USERNAME HERE>@xmpp-test.forgeservicelab.fi
